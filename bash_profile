@@ -37,7 +37,7 @@ PROMPT_COMMAND="history -a; $PROMPT_COMMAND"
 shopt -s checkwinsize
 
 #maven auto completion and color
-. ~/.local/bin/maven_bash_completion.bash
+. ~/.local/bin/maven_completion.bash
 . ~/.local/bin/mvn-color
 
 export EDITOR=vim
@@ -45,5 +45,5 @@ export SVN_EDITOR=vim
 #Java
 export JAVA_HOME=/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home
 export MAVEN_HOME=/usr/albiaba/maven
-export MAVEN_OPTS=-Xmx2048m -Xms2048m
+export MAVEN_OPTS="-Xmx1024m -Xms1024m"
 export PATH=/opt/local/bin:/opt/local/sbin:$MAVEN_HOME/bin:$PATH
