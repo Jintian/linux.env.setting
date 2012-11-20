@@ -13,6 +13,7 @@ install:
 	mkdir -p $(INSTALL_DIR)
 	mkdir -p $(VIM_DIR)
 	cp bashmarks.sh $(INSTALL_DIR)
+	cp sshx $(INSTALL_DIR)
 	cp maven_completion.bash $(INSTALL_DIR)
 	cp mvn-color $(INSTALL_DIR)
 	cp -r vimplugins/autoload $(VIM_DIR)

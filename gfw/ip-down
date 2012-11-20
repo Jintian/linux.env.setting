@@ -3544,6 +3544,8 @@ route delete 223.254.0.0/16 ${OLDGW}
 route delete 223.255.0.0/17 ${OLDGW}
 route delete 223.255.236.0/22 ${OLDGW}
 route delete 223.255.252.0/23 ${OLDGW}
+route delete 10.0.0.0/8 ${OLDGW}
+route delete 172.0.0.0/8 ${OLDGW}
 
 
 rm /tmp/pptp_oldgw

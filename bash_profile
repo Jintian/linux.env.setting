@@ -22,6 +22,7 @@ alias ll='ls -G -F -h -l'
 alias grep='grep --color=auto'
 alias jps='jps -l -v'
 alias cs7087='ssh jtdeng@cs7087.comp.hkbu.edu.hk'
+alias ssh='. ~/local/bin/sshx'
 
 
 . ~/.local/bin/bashmarks.sh
@@ -47,3 +48,4 @@ export JAVA_HOME=/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Hom
 export MAVEN_HOME=/usr/albiaba/maven
 export MAVEN_OPTS="-Xmx1024m -Xms1024m"
 export PATH=/opt/local/bin:/opt/local/sbin:$MAVEN_HOME/bin:$PATH
+export LC_CTYPE="en_US.UTF-8"
