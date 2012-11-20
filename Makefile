@@ -9,6 +9,7 @@ install:
 	cp bash_profile ~/.bash_profile
 	cp screenrc ~/.screenrc
 	cp vimrc ~/.vimrc
+	cp inputrc ~/.inputrc
 	mkdir -p $(INSTALL_DIR)
 	mkdir -p $(VIM_DIR)
 	cp bashmarks.sh $(INSTALL_DIR)

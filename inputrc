@@ -1,0 +1,8 @@
+# up/down arrow to auto complete
+"\e[B": history-search-forward
+"\e[A": history-search-backward
+
+# auto-complete a file or directory name ignoring case
+set completion-ignore-case On
+
+set show-all-if-ambiguous On

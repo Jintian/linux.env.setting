@@ -1,12 +1,15 @@
-[submodule "vimplugins/bundle/supertab"]
-	path = vimplugins/bundle/supertab
+[submodule "vim/plugins/bundle/supertab"]
+	path = vim/plugins/bundle/supertab
 	url = https://github.com/ervandew/supertab.git
-[submodule "vimplugins/bundle/nerdtree"]
-	path = vimplugins/bundle/nerdtree
+[submodule "vim/plugins/bundle/nerdcommenter"]
+	path = vim/plugins/bundle/nerdcommenter
+	url = https://github.com/scrooloose/nerdcommenter
+[submodule "vim/plugins/bundle/nerdtree"]
+	path = vim/plugins/bundle/nerdtree
 	url = https://github.com/scrooloose/nerdtree.git
-[submodule "vimplugins/bundle/nerdcommenter"]
-	path = vimplugins/bundle/nerdcommenter
-	url = https://github.com/scrooloose/nerdcommenter.git
-[submodule "vimplugins/bundle/matchit"]
-	path = vimplugins/bundle/matchit
+[submodule "vim/plugins/bundle/sqlutil"]
+	path = vim/plugins/bundle/sqlutil
+	url = https://github.com/vim-scripts/SQLUtilities.git
+[submodule "vim/plugins/bundle/matchit"]
+	path = vim/plugins/bundle/matchit
 	url = https://github.com/vim-scripts/matchit.zip.git
