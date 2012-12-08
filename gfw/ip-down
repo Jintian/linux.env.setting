@@ -3549,3 +3549,8 @@ route delete 172.0.0.0/8 ${OLDGW}
 
 
 rm /tmp/pptp_oldgw
+
+#refresh dns
+if [[ "$unamestr" == 'Darwin' ]]; then
+	killall -HUP mDNSResponder  
+fi

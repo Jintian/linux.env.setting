@@ -36,5 +36,5 @@
 #   VisualHostKey no
 #   ProxyCommand ssh -q -W %h:%p gateway.example.com
    ControlMaster auto
-   ControlPath /tmp/ssh/socket-%r@%h:%p
+   ControlPath ~/.ssh/socket-%r@%h:%p
    Compression yes

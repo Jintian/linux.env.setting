@@ -1,14 +1,7 @@
-#
-# /etc/bash.bashrc
-#
-# This file is the systemwide bashrc file. While most of the
-# environment is preserved when running an interactive shell
-# the PS[1-4] variables, aliases and functions are reset.
-#
-# When running a non-login shell, apply the following settings:
-# - Prompt defaults (PS[1-4], PROMPT_COMMAND)
-# - bash_completion if it exists
-# - source /etc/bash.bashrc.local
+#  	Author: jintian.deng      
+# 	Last modified: 2012 Dec 08 12:31:17
+################################################
+
 PS1='\[\033[36;1m\]\u\[\033[m\]@\[\033[32;1m\]\h:\[\033[33;1m\]\W\[\033[m\]\$ '
 PS2='> '
 PS3='> '
@@ -17,17 +10,17 @@ PS4='+ '
 export PS1 PS2 PS3 PS4
 
 
+#alias list
 alias ls='ls -G -F -h'
 alias ll='ls -G -F -h -l'
 alias grep='grep --color=auto'
 alias jps='jps -l -v'
-alias cs7087='ssh jtdeng@cs7087.comp.hkbu.edu.hk'
-alias ssh='. ~/local/bin/sshx'
+alias ssh='. ~/.local/bin/sshx'
 
-
+#bash bookmark
 . ~/.local/bin/bashmarks.sh
 
-#history only save 500 commands, we extends it.
+#history only save 500 commands, extends this limit.
 export HISTCONTROL=ignoredups
 export HISTIGNORE="[  ]*:&:bg:fg:exit"
 export HISTFILESIZE=1000000000
@@ -41,11 +34,15 @@ shopt -s checkwinsize
 . ~/.local/bin/maven_completion.bash
 . ~/.local/bin/mvn-color
 
-export EDITOR=vim
-export SVN_EDITOR=vim
-#Java
+#git
+. ~/.local/bin/git-completion.bash
+
+#Java, maven,svn, etc
 export JAVA_HOME=/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home
 export MAVEN_HOME=/usr/albiaba/maven
 export MAVEN_OPTS="-Xmx1024m -Xms1024m"
-export PATH=/opt/local/bin:/opt/local/sbin:$MAVEN_HOME/bin:$PATH
-export LC_CTYPE="en_US.UTF-8"
+export EDITOR=vim
+export SVN_EDITOR=vim
+
+#macport
+export PATH=/opt/local/bin:/opt/local/sbin:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/bin:$MAVEN_HOME/bin:$PATH

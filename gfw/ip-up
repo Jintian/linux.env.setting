@@ -3548,3 +3548,9 @@ route add 223.255.236.0/22 "${OLDGW}"
 route add 223.255.252.0/23 "${OLDGW}"
 route add 10.0.0.0/8 "${OLDGW}"
 route add 172.0.0.0/8 "${OLDGW}"
+
+
+#refresh dns
+if [[ "$unamestr" == 'Darwin' ]]; then
+	killall -HUP mDNSResponder  
+fi
