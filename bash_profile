@@ -1,5 +1,5 @@
 #  	Author: jintian.deng      
-# 	Last modified: 2012 Dec 08 12:31:17
+# 	Last modified: 2012 Dec 08 20:46:48
 ################################################
 
 PS1='\[\033[36;1m\]\u\[\033[m\]@\[\033[32;1m\]\h:\[\033[33;1m\]\W\[\033[m\]\$ '
@@ -16,6 +16,7 @@ alias ll='ls -G -F -h -l'
 alias grep='grep --color=auto'
 alias jps='jps -l -v'
 alias ssh='. ~/.local/bin/sshx'
+alias less='. ~/.local/bin/less.sh'
 
 #bash bookmark
 . ~/.local/bin/bashmarks.sh

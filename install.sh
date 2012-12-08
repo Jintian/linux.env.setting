@@ -13,6 +13,8 @@ cp bashmarks.sh ~/.local/bin/
 cp -r maven ~/.local/bin/
 cp ssh/sshx ~/.local/bin/
 cp git-completion.bash ~/.local/bin/
+cp vim/less.sh ~/.local/bin/
+
 cp vim/vimrc ~/.vimrc
 
 if [ ! -d ~/.vim ]; then
